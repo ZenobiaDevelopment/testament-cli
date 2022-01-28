@@ -2,6 +2,10 @@
 
 Testament CLI is a brand new CLI made by Zenobia Development(By Owner trojanz07).
 
+# INSTALLATION
+
+`npm install testament-cli`
+
 # LICENSE
 
 This brand new CLI is protected by GPL-3.0 License.
