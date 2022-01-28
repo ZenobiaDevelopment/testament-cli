@@ -8,7 +8,7 @@ You cannot use the repository until we complete our developments totally.
 
 # DISCORD SERVER
 
-  -<a href="https://discord.gg/NZ7Q5qWrsS">Click here.</a>
+  - <a href="https://discord.gg/NZ7Q5qWrsS">Click here.</a>
 
 # INSTALLATION
 
