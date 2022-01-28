@@ -2,6 +2,14 @@
 
 Testament CLI is a brand new CLI made by Zenobia Development(By Owner trojanz07).
 
+# DISCLAIMER
+
+You cannot use the repository until we complete our developments totally.
+
+# DISCORD SERVER
+
+  -<a href="https://discord.gg/NZ7Q5qWrsS">Click here.</a>
+
 # INSTALLATION
 
 `npm install testament-cli`
