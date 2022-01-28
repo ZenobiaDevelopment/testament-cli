@@ -17,3 +17,8 @@ No current developers :/
 # DOCS
 
   - <a href="https://github.com/ZenobiaDevelopment/testament-cli/blob/main/docs/README.md">Click here.</a>
+
+
+# VERSION
+
+`1.0.1`
