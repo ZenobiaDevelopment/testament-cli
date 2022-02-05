@@ -1,6 +1,6 @@
 {
   "name": "testament-cli",
-  "version": "1.5.1-dev",
+  "version": "1.5.2-dev",
   "description": "Brand new CLI, Made by Zenobia Development team.",
   "main": "main.js",
   "type": "module",
