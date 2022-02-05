@@ -30,7 +30,6 @@ export function error(String) {
 }
 
 const testament = {
-    Rainbow,
     animate,
     ASCII,
     animateSuccess,
