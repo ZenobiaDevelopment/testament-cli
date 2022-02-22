@@ -60,3 +60,7 @@ Example:
 `testament.error('TEST')`
 
 If you using error handlers, you can use this function instead of `console.log`.
+
+# Colors
+
+- <a href="https://github.com/ZenobiaDevelopment/testament-cli/blob/main/docs/COLORS.md">Click here.</a>
