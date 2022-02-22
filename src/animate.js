@@ -21,6 +21,7 @@ export function Spinner(String) {
 
         std.write(line)
 
+        
         rdl.cursorTo(std, 0, 2)
 
         index = index > spinners.length ? 0 : index + 1
