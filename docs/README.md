@@ -11,7 +11,8 @@ To import testament-cli to your project, you need to have module type in your pa
 animate is done by `animate()` function and show a spinner text.
 
 Parameters:
-  - String: String
+
+- String: String
 
 Example:
 `testament.animate('TEST')`
@@ -21,45 +22,59 @@ Example:
 ASCII animation is done by `ASCII()` function and show ASCII text.
 
 Parameters:
-  - String: String
+
+- String: String
 
 Example:
 `testament.ASCII('TEST')`
-
 
 # animateSuccess
 
 animateSuccess animation is done by `animateSuccess()` function and show a green tick and text.
 
 Parameters:
-  - String: String
+
+- String: String
 
 Example:
 `testament.animateSuccess('TEST')`
-
 
 # animateFail
 
 animateFail animation is done by `animateFail()` function and show a red tick and text.
 
 Parameters:
-  - String: String
+
+- String: String
 
 Example:
 `testament.animateFail('TEST')`
-
 
 # error
 
 error animation is done by `error()` function and show a error tag and text.
 
 Parameters:
-  - String: String
+
+- String: String
 
 Example:
 `testament.error('TEST')`
 
 If you using error handlers, you can use this function instead of `console.log`.
+
+# warn
+
+warn is done using the `warn()` method, and will show a warning tag and text.
+
+Parameters:
+
+- String: String
+
+Example:
+`testament.warn('TEST')`
+
+If you using debugging warning, you can use this function instead of `console.log`.
 
 # Colors
 
