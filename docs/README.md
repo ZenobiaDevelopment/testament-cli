@@ -2,9 +2,11 @@
 
 # Importing
 
-To import testament-cli to your project, you need to have module type in your package.json. After that, write this code in your main file.
+To import testament-cli to your project, write this code in your main file.
 
-`import testament from 'testament-cli'`
+EJS: `import testament from 'testament-cli';`
+
+CJS: `const testament = require("testament-cli");`
 
 # animate
 

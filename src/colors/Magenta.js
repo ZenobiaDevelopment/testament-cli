@@ -1,5 +1,5 @@
-export function magenta(String) {
-    console.log('\x1b[35m'+ String +'\x1b[39m');
+export function Magenta(String) {
+    return '\x1b[35m' + String + '\x1b[39m';
 }
 
-export default {magenta};
+export default {Magenta};

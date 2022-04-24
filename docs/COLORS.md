@@ -6,7 +6,7 @@ Parameters:
   - String: String
 
 Example:
-`testament.Black('TEST')`
+`console.log(testament.Black('TEST'))`
 
 # Red
 
@@ -16,7 +16,7 @@ Parameters:
   - String: String
 
 Example:
-`testament.Red('TEST')`
+`console.log(testament.Red('TEST'))`
 
 # Green
 
@@ -26,7 +26,7 @@ Parameters:
   - String: String
 
 Example:
-`testament.Green('TEST')`
+`console.log(testament.Green('TEST'))`
 
 # Yellow
 
@@ -36,7 +36,7 @@ Parameters:
   - String: String
 
 Example:
-`testament.Yellow('TEST')`
+`console.log(testament.Yellow('TEST'))`
 
 # Blue
 
@@ -46,7 +46,7 @@ Parameters:
   - String: String
 
 Example:
-`testament.Blue('TEST')`
+`console.log(testament.Blue('TEST'))`
 
 # Magenta
 
@@ -56,7 +56,7 @@ Parameters:
   - String: String
 
 Example:
-`testament.Magenta('TEST')`
+`console.log(testament.Magenta('TEST'))`
 
 # Cyan
 
@@ -66,7 +66,7 @@ Parameters:
   - String: String
 
 Example:
-`testament.Cyan('TEST')`
+`console.log(testament.Cyan('TEST'))`
 
 # Gray
 
@@ -76,4 +76,4 @@ Parameters:
   - String: String
 
 Example:
-`testament.Gray('TEST')`
+`console.log(testament.Gray('TEST'))`

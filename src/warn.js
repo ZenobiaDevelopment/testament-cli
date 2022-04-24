@@ -1,5 +1,5 @@
-import { yellow } from "./colors/Yellow.js"
+import { Yellow } from "./colors/Yellow.js"
 
 export function Warn(String) {
-    yellow(`[!] ${String}`);
+    console.log(`${Yellow('[!]')} ${String}`)
 }
