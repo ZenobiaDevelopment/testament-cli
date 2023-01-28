@@ -1,6 +1,6 @@
 {
   "name": "testament-cli",
-  "version": "2.0.5",
+  "version": "2.0.6-dev",
   "description": "Brand new CLI, Made by Zenobia Development team.",
   "exports": {
     "import": "./out.js",
