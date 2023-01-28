@@ -26,6 +26,7 @@ __export(main_exports, {
   ASCII: () => ASCII,
   Black: () => Black,
   Blue: () => Blue,
+  Clock: () => Clock,
   Cyan: () => Cyan,
   Gray: () => Gray,
   Green: () => Green,
@@ -73,6 +74,34 @@ function Spinner(String) {
     import_readline.default.cursorTo(std, 0, 2);
     index = index > spinners.length ? 0 : index + 1;
   }, 100);
+}
+
+// src/clock.js
+function clock(format) {
+  if (format === "24") {
+    let update = function(i) {
+      if (i < 10) {
+        return "0" + i;
+      } else {
+        return i;
+      }
+    }, current = function() {
+      let date = new Date();
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      let seconds = date.getSeconds();
+      hours = update(hours);
+      minutes = update(minutes);
+      seconds = update(seconds);
+      process.stdout.write(hours + " : " + minutes + " : " + seconds + `\r`);
+      setTimeout(() => {
+        current();
+      }, 1e3);
+    };
+    current();
+  } else if (format === "12") {
+    return;
+  }
 }
 
 // src/ASCII.js
@@ -124,6 +153,9 @@ function Green(String) {
 function animate(String) {
   Spinner(String);
 }
+function Clock(String) {
+  clock(String);
+}
 function animateSuccess(String) {
   SuccessAnimation(String);
 }
@@ -140,6 +172,7 @@ function warn(String) {
   Warn(String);
 }
 var testament = {
+  Clock,
   animate,
   ASCII,
   animateSuccess,
@@ -161,6 +194,7 @@ var main_default = testament;
   ASCII,
   Black,
   Blue,
+  Clock,
   Cyan,
   Gray,
   Green,

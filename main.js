@@ -5,6 +5,7 @@ import { Error } from './src/error.js';
 import { SuccessAnimation } from './src/animateSuccess.js';
 import { FailAnimation } from './src/animateFail.js';
 import { Spinner } from './src/animate.js';
+import { clock } from './src/clock.js';
 import { GenerateASCII } from './src/ASCII.js';
 import { Warn } from './src/warn.js';
 
@@ -54,6 +55,10 @@ export function animate(String) {
     Spinner(String);
 }
 
+export function Clock(String) {
+    clock(String);
+}
+
 
 export function animateSuccess(String) {
     SuccessAnimation(String);
@@ -76,6 +81,7 @@ export function warn(String) {
 }
 
 const testament = {
+    Clock,
     animate,
     ASCII,
     animateSuccess,

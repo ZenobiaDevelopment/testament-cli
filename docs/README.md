@@ -78,6 +78,18 @@ Example:
 
 If you using debugging warning, you can use this function instead of `console.log`.
 
+# Clock
+
+Clock is done using the `Clock()` method, and will run a digital clock on your terminal.
+
+Parameters:
+
+- String: `24` or `12` hour format.
+
+Example:
+`testament.Clock('24')`
+
+
 # Colors
 
 - <a href="https://github.com/ZenobiaDevelopment/testament-cli/blob/main/docs/COLORS.md">Click here.</a>
