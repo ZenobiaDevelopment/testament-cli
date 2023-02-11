@@ -79,20 +79,20 @@ function Spinner(String) {
 // src/clock.js
 function clock(format) {
   if (format === "24") {
-    let update = function(i) {
+    let update_24 = function(i) {
       if (i < 10) {
         return "0" + i;
       } else {
         return i;
       }
     }, current = function() {
-      let date = new Date();
-      let hours = date.getHours();
-      let minutes = date.getMinutes();
-      let seconds = date.getSeconds();
-      hours = update(hours);
-      minutes = update(minutes);
-      seconds = update(seconds);
+      let date_24 = new Date();
+      let hours = date_24.getHours();
+      let minutes = date_24.getMinutes();
+      let seconds = date_24.getSeconds();
+      hours = update_24(hours);
+      minutes = update_24(minutes);
+      seconds = update_24(seconds);
       process.stdout.write(hours + " : " + minutes + " : " + seconds + `\r`);
       setTimeout(() => {
         current();
@@ -100,7 +100,29 @@ function clock(format) {
     };
     current();
   } else if (format === "12") {
-    return;
+    let update_12 = function(k) {
+      if (k < 10) {
+        return "0" + k;
+      } else {
+        return k;
+      }
+    }, currentTime = function() {
+      let date_12 = new Date();
+      let hours = date_12.getHours();
+      let minutes = date_12.getMinutes();
+      let seconds = date_12.getSeconds();
+      let midday = "AM";
+      midday = hours >= 12 ? "PM" : "AM";
+      hours = hours == 0 ? 12 : hours > 12 ? hours - 12 : hours;
+      hours = update_12(hours);
+      minutes = update_12(minutes);
+      seconds = update_12(seconds);
+      process.stdout.write(hours + " : " + minutes + " : " + seconds + " " + midday + `\r`);
+      setTimeout(() => {
+        currentTime();
+      }, 1e3);
+    };
+    currentTime();
   }
 }
 
