@@ -15,4 +15,4 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-To report a vulnerability, we suggest to go to issues tap and 
+To report a vulnerability, we suggest to go to issues tap and click new.
