@@ -9,45 +9,45 @@ import { clock } from './src/clock.js';
 import { GenerateASCII } from './src/ASCII.js';
 import { Warn } from './src/warn.js';
 
-// import { Black } from './src/colors/Black.js';
-// import { Red } from './src/colors/Red.js';
-// import { Green } from './src/colors/Green.js';
-// import { Yellow } from './src/colors/Yellow.js';
-// import { Blue } from './src/colors/Blue.js';
-// import { Magenta } from './src/colors/Magenta.js';
-// import { Cyan } from './src/colors/Cyan.js';
-// import { Gray } from './src/colors/Gray.js';
+import { black } from './src/colors/black.js';
+import { red } from './src/colors/red.js';
+import { green } from './src/colors/green.js';
+import { yellow } from './src/colors/yellow.js';
+import { blue } from './src/colors/blue.js';
+import { magenta } from './src/colors/magenta.js';
+import { cyan } from './src/colors/cyan.js';
+import { gray } from './src/colors/gray.js';
 
-export function Black(String) {
-    return '\x1b[30m' + String + '\x1b[39m';
+export function Black(string) {
+    return black(string);
 }
 
-export function Blue(String) {
-    return '\x1b[34m' + String + '\x1b[39m';
+export function Blue(string) {
+    return blue(string);
 }
 
-export function Cyan(String) {
-    return '\x1b[36m' + String + '\x1b[39m';
+export function Cyan(string) {
+    return cyan(string);
 }
 
-export function Gray(String) {
-    return '\x1b[90m' + String + '\x1b[39m';
+export function Gray(string) {
+    return gray(string);
 }
 
-export function Yellow(String) {
-    return '\x1b[33m' + String + '\x1b[39m';
+export function Yellow(string) {
+    return yellow(string);
 }
 
-export function Red(String) {
-    return '\x1b[31m' + String + '\x1b[39m';
+export function Red(string) {
+    return red(string);
 }
 
-export function Magenta(String) {
-    return '\x1b[35m' + String + '\x1b[39m';
+export function Magenta(string) {
+    return magenta(string);
 }
 
-export function Green(String) {
-    return '\x1b[32m' + String + '\x1b[39m';
+export function Green(string) {
+    return green(string);
 }
 
 

@@ -32,7 +32,7 @@ __export(main_exports, {
   Green: () => Green,
   Magenta: () => Magenta,
   Red: () => Red,
-  Yellow: () => Yellow2,
+  Yellow: () => Yellow,
   animate: () => animate,
   animateFail: () => animateFail,
   animateSuccess: () => animateSuccess,
@@ -137,40 +137,75 @@ function GenerateASCII(String) {
   });
 }
 
-// src/colors/Yellow.js
-function Yellow(String) {
+// src/colors/yellow.js
+function yellow(String) {
   return "\x1B[33m" + String + "\x1B[39m";
 }
 
 // src/warn.js
 function Warn(String) {
-  console.log(`${Yellow("[!]")} ${String}`);
+  console.log(`${yellow("[!]")} ${String}`);
+}
+
+// src/colors/black.js
+function black(String) {
+  return "\x1B[30m" + String + "\x1B[39m";
+}
+
+// src/colors/red.js
+function red(String) {
+  return "\x1B[31m" + String + "\x1B[39m";
+}
+
+// src/colors/green.js
+function green(String) {
+  return "\x1B[32m" + String + "\x1B[39m";
+}
+
+// src/colors/blue.js
+function blue(String) {
+  return "\x1B[34m" + String + "\x1B[39m";
+}
+
+// src/colors/magenta.js
+function magenta(String) {
+  return "\x1B[35m" + String + "\x1B[39m";
+}
+
+// src/colors/cyan.js
+function cyan(String) {
+  return "\x1B[36m" + String + "\x1B[39m";
+}
+
+// src/colors/gray.js
+function gray(String) {
+  return "\x1B[90m" + String + "\x1B[39m";
 }
 
 // main.js
-function Black(String) {
-  return "\x1B[30m" + String + "\x1B[39m";
+function Black(string) {
+  return black(string);
 }
-function Blue(String) {
-  return "\x1B[34m" + String + "\x1B[39m";
+function Blue(string) {
+  return blue(string);
 }
-function Cyan(String) {
-  return "\x1B[36m" + String + "\x1B[39m";
+function Cyan(string) {
+  return cyan(string);
 }
-function Gray(String) {
-  return "\x1B[90m" + String + "\x1B[39m";
+function Gray(string) {
+  return gray(string);
 }
-function Yellow2(String) {
-  return "\x1B[33m" + String + "\x1B[39m";
+function Yellow(string) {
+  return yellow(string);
 }
-function Red(String) {
-  return "\x1B[31m" + String + "\x1B[39m";
+function Red(string) {
+  return red(string);
 }
-function Magenta(String) {
-  return "\x1B[35m" + String + "\x1B[39m";
+function Magenta(string) {
+  return magenta(string);
 }
-function Green(String) {
-  return "\x1B[32m" + String + "\x1B[39m";
+function Green(string) {
+  return green(string);
 }
 function animate(String) {
   Spinner(String);
@@ -208,7 +243,7 @@ var testament = {
   Magenta,
   Gray,
   Cyan,
-  Yellow: Yellow2
+  Yellow
 };
 var main_default = testament;
 // Annotate the CommonJS export names for ESM import in node:
