@@ -3,7 +3,7 @@ const esbuild = require('esbuild');
 esbuild.buildSync({
     entryPoints: ['main.js'],
     bundle: true,
-    external: ["node-fetch", "readline"],
+    external: ["puppeteer", "readline"],
     platform: 'node',
     outfile: 'out.js',
 })

@@ -17,7 +17,10 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target, mod));
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // main.js
@@ -127,14 +130,22 @@ function clock(format) {
 }
 
 // src/ASCII.js
-var import_node_fetch = __toESM(require("node-fetch"));
+var import_puppeteer = __toESM(require("puppeteer"));
 function GenerateASCII(String) {
-  let ENDPOINT = "https://artii.herokuapp.com/make?text=" + String;
-  (0, import_node_fetch.default)(ENDPOINT, {
-    method: "GET"
-  }).then((res) => res.text()).then((text) => {
-    console.log(text);
-  });
+  async function fetchContent(url2, selector) {
+    const browser = await import_puppeteer.default.launch({ headless: "new" });
+    const page = await browser.newPage();
+    await page.goto(url2);
+    await page.waitForSelector(selector);
+    const content = await page.$eval(selector, (element) => element.innerHTML);
+    await browser.close();
+    return content;
+  }
+  const url = "https://patorjk.com/software/taag/#p=display&f=Big&t=" + String;
+  const divSelector = "pre#taag_output_text";
+  fetchContent(url, divSelector).then((content) => {
+    console.log(content);
+  }).catch((error2) => console.error("Error fetching data:", error2));
 }
 
 // src/colors/yellow.js

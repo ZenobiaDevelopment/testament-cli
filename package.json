@@ -1,6 +1,6 @@
 {
   "name": "testament-cli",
-  "version": "2.0.8",
+  "version": "2.0.9-dev",
   "description": "Brand new CLI, Made by Zenobia Development team.",
   "exports": {
     "import": "./out.js",
@@ -13,8 +13,8 @@
   "author": "trojanz07",
   "license": "GPL-3.0",
   "dependencies": {
-    "node-fetch": "^2.6.6",
-    "readline": "^1.3.0"
+    "readline": "^1.3.0",
+    "puppeteer": "^21.7.0"
   },
   "devDependencies": {
     "esbuild": "^0.14.38"
