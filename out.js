@@ -41,6 +41,7 @@ __export(main_exports, {
   animateSuccess: () => animateSuccess,
   default: () => main_default,
   error: () => error,
+  progressBar: () => progressBar,
   warn: () => warn
 });
 module.exports = __toCommonJS(main_exports);
@@ -158,6 +159,18 @@ function Warn(String) {
   console.log(`${yellow("[!]")} ${String}`);
 }
 
+// src/progressbar.js
+function progressbar(percentage) {
+  if (percentage < 1 || percentage > 100) {
+    console.error("Error: Progress should be a number between 1 and 100.");
+    return;
+  }
+  percentage = Math.min(100, Math.max(0, percentage));
+  const numBars = Math.floor(percentage / 5);
+  const progressBar2 = `[${"=".repeat(numBars)}${" ".repeat(20 - numBars)}] ${percentage}%`;
+  console.log(progressBar2);
+}
+
 // src/colors/black.js
 function black(String) {
   return "\x1B[30m" + String + "\x1B[39m";
@@ -239,6 +252,9 @@ function error(String) {
 function warn(String) {
   Warn(String);
 }
+function progressBar(percentage) {
+  progressbar(percentage);
+}
 var testament = {
   Clock,
   animate,
@@ -247,6 +263,7 @@ var testament = {
   animateFail,
   error,
   warn,
+  progressBar,
   Black,
   Red,
   Green,
@@ -273,5 +290,6 @@ var main_default = testament;
   animateFail,
   animateSuccess,
   error,
+  progressBar,
   warn
 });
