@@ -89,6 +89,17 @@ Parameters:
 Example:
 `testament.Clock('24')`
 
+# ProgressBar
+
+ProgressBar is done using the `progressBar()` method, and will run a progress bar on your terminal.
+
+Parameters:
+
+- percentage: It can be a string or a number ranging from 1 to 100.
+
+Example:
+`testament.percentage(50)`
+
 
 # Colors
 
