@@ -8,6 +8,7 @@ import { Spinner } from './src/animate.js';
 import { clock } from './src/clock.js';
 import { GenerateASCII } from './src/ASCII.js';
 import { Warn } from './src/warn.js';
+import { progressbar } from './src/progressbar.js';
 
 import { black } from './src/colors/black.js';
 import { red } from './src/colors/red.js';
