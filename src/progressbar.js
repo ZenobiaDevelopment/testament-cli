@@ -9,7 +9,6 @@ export function progressbar(percentage) {
 
    
     console.log(progressBar);
-    }
 }
 
 
