@@ -29,4 +29,4 @@ No current developers :/
 
 # VERSION
 
-`2.0.9-dev`
+`2.1.0`
