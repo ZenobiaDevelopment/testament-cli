@@ -93,6 +93,7 @@ const testament = {
     animateFail,
     error,
     warn,
+    progressBar,
     Black,
     Red,
     Green,
