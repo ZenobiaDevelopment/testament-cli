@@ -1,4 +1,4 @@
-export function progressBar(percentage) {
+export function progressbar(percentage) {
     progress = Math.min(100, Math.max(0, percentage));
 
 
@@ -13,4 +13,4 @@ export function progressBar(percentage) {
 }
 
 
-export default {progressBar};
+export default {progressbar};
