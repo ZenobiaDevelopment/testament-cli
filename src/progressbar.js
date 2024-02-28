@@ -1,6 +1,5 @@
 export function progressbar(percentage) {
-    let progress;
-    progress = Math.min(100, Math.max(0, percentage));
+    percentage = Math.min(100, Math.max(0, percentage));
 
 
     const numBars = Math.floor(percentage / 5);
