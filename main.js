@@ -81,6 +81,10 @@ export function warn(String) {
     Warn(String);
 }
 
+export function progressBar(percentage) {
+    progressbar(percentage);
+}
+
 const testament = {
     Clock,
     animate,
