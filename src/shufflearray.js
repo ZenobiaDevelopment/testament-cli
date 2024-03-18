@@ -1,4 +1,4 @@
-export function shufflearray(String) {
+export function shufflearray(array) {
 
     if (!Array.isArray(array)) {
         console.error('Error: Input should be an array.');
