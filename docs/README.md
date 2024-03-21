@@ -100,6 +100,17 @@ Parameters:
 Example:
 `testament.percentage(50)`
 
+# shuffleArray
+
+shuffleArray is done using the `shuffleArray()` method, and will an array for you.
+
+Parameters:
+
+- array: It can be an array with values.
+
+Example:
+`testament.shuffleArray([1,2,3,4])`
+
 
 # Colors
 
