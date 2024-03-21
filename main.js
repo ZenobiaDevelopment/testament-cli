@@ -99,6 +99,7 @@ const testament = {
     error,
     warn,
     progressBar,
+    shuffleArray,
     Black,
     Red,
     Green,
