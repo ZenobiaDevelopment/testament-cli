@@ -85,6 +85,10 @@ export function progressBar(percentage) {
     progressbar(percentage);
 }
 
+export function shuffleArray(array) {
+    return shufflearray(array);
+}
+
 const testament = {
     Clock,
     animate,
